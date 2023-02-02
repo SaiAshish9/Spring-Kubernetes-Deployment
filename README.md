@@ -128,9 +128,14 @@ NAME                               READY   STATUS             RESTARTS   AGE
 spring-boot-k8s-658c8fff8d-v9h64   0/1     ImagePullBackOff   0          35s
 spring-boot-k8s-7d5ccdcf9f-8mwq6   0/1     ImagePullBackOff   0          32m
 spring-boot-k8s-7d5ccdcf9f-btsrv   0/1     ImagePullBackOff   0          32m
-
-
 ```
+
+
+<img width="666" alt="Screenshot 2023-02-03 at 3 37 12 AM" src="https://user-images.githubusercontent.com/43849911/216460222-cb68995a-ed44-41fa-ae23-5d160efd96eb.png">
+
+<img width="1714" alt="Screenshot 2023-02-03 at 3 37 56 AM" src="https://user-images.githubusercontent.com/43849911/216460340-8a05e26e-279b-46f7-b4a8-082a03df8331.png">
+
+<img width="760" alt="Screenshot 2023-02-03 at 3 39 08 AM" src="https://user-images.githubusercontent.com/43849911/216460550-69268c0c-d1a0-4a37-8cb7-329bd959efb4.png">
 
 
 
