@@ -25,3 +25,8 @@ eval $(minikube docker-env)
 
 <img width="889" alt="Screenshot 2023-02-02 at 11 54 50 PM" src="https://user-images.githubusercontent.com/43849911/216414689-ce14cb0e-7bd4-4f92-b8d8-e0f3c3c056ab.png">
 
+<img width="844" alt="Screenshot 2023-02-03 at 12 12 29 AM" src="https://user-images.githubusercontent.com/43849911/216420049-8c1c2f3e-93c0-4301-a5a4-250ca3f79e58.png">
+
+```
+replicas: 2, Create 2 PODS in k8s cluster 
+```
