@@ -9,6 +9,8 @@ minikube start
 minikube status
 minikube dashboard
 
+kubectl get pods
+
 docker build -t spring-k8s:1.0 .
 
 eval $(minikube docker-env) // We need to allow k8s to read docker repository:
