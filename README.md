@@ -39,6 +39,8 @@ kubectl get deployments
 NAME              READY   UP-TO-DATE   AVAILABLE   AGE
 spring-boot-k8s   3/3     3            0 
 
+kubectl get pods
+
 kubectl delete deploy spring-boot-k8s
 
 kubectl logs spring-boot-k8s-7d5ccdcf9f-f9mfw
@@ -50,6 +52,8 @@ kubectl get service
 kubectl get svc
 
 kubectl get nodes -o wide 
+
+kubectl scale deploy fci-primaryds --replicas=1
 
 minikube ip 
 # node ip
