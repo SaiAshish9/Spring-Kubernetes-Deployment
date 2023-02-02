@@ -40,7 +40,7 @@ spring-boot-k8s   3/3     3            0
 
 <img width="898" alt="Screenshot 2023-02-02 at 11 21 56 PM" src="https://user-images.githubusercontent.com/43849911/216403092-49d0220b-cd8a-4f2b-9c20-ef07c310e384.png">
 
-<img width="951" alt="Screenshot 2023-02-02 at 11 22 19 PM" src="https://user-images.githubusercontent.com/43849911/216403160-05040e07-7f41-4afb-9bbc-efc892307b06.png">
+<img width="1110" alt="Screenshot 2023-02-03 at 2 06 00 AM" src="https://user-images.githubusercontent.com/43849911/216443787-03426a05-11e4-489c-8596-2af0ac81bd75.png">
 
 <img width="961" alt="Screenshot 2023-02-02 at 11 42 14 PM" src="https://user-images.githubusercontent.com/43849911/216409573-2308d7ec-51eb-4c49-933c-da7db34a9123.png">
 
