@@ -11,6 +11,9 @@ minikube start
 minikube status
 minikube dashboard
 
+kubectl describe pods <pod>
+
+
 Remove all containers:
 docker rm $(docker ps -a)
 
