@@ -11,6 +11,12 @@ minikube start
 minikube status
 minikube dashboard
 
+Remove all containers:
+docker rm $(docker ps -a)
+
+Remove all images:
+docker rmi $(docker images -a -q)
+
 kubectl get pods
 kubectl delete pod spring-boot-k8s-7d5ccdcf9f-f9mfw
 
