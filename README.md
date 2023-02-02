@@ -20,7 +20,6 @@ docker rmi $(docker images -a -q)
 kubectl get pods 
 // 3 will be shown
 kubectl delete pod spring-boot-k8s-7d5ccdcf9f-f9mfw
-kubectl logs spring-boot-k8s-7d5ccdcf9f-f9mfw
 
 docker build -t spring-k8s:1.0 .
 
@@ -34,6 +33,25 @@ kubectl get deployments
 NAME              READY   UP-TO-DATE   AVAILABLE   AGE
 spring-boot-k8s   3/3     3            0 
 
+kubectl logs spring-boot-k8s-7d5ccdcf9f-f9mfw
+
+kubectl apply -f service.yaml 
+
+kubectl get service
+kubectl get svc
+
+kubectl get nodes -o wide 
+
+minikube ip 
+# node ip
+
+we need node port and ip to access the api
+
+http://{{nodeIP}}:{PORT}/{API URL}/endpoint
+
+http://192.168.64.14:32208/message
+
+minikube dashboard
 ```
 
 <img width="857" alt="Screenshot 2023-02-02 at 11 15 25 PM" src="https://user-images.githubusercontent.com/43849911/216401660-65856cc2-c916-4a35-97fc-52f3dafce97d.png">
@@ -54,4 +72,26 @@ replicas: 2, Create 2 PODS in k8s cluster
 
 ```
 NodePort, Load Balancer and ClusterIp are 3 types available in k8s
+
+We can access api via node ip & node port
+
+We can check deployments,pods, replicaSets, service, clusterIp at UI
 ```
+
+```
+If one pod is deleted at UI , new pod will restarted immediately to maintain the replicaSet count
+```
+
+```
+Status can be terminating , running and Container.
+
+Logs can be viewed via a right click.
+```
+```
+Deployments Pods & ReplicaSets
+```
+
+```
+Self Healing Concept in k8s
+```
+
