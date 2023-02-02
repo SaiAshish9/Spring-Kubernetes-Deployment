@@ -70,6 +70,9 @@ minikube dashboard
 
 <img width="844" alt="Screenshot 2023-02-03 at 12 12 29 AM" src="https://user-images.githubusercontent.com/43849911/216420049-8c1c2f3e-93c0-4301-a5a4-250ca3f79e58.png">
 
+
+<img width="1687" alt="Screenshot 2023-02-03 at 2 57 59 AM" src="https://user-images.githubusercontent.com/43849911/216453477-7fa9934d-ef7a-4c4f-b9c3-6e1c192ca33c.png">
+
 ```
 replicas: 2, Create 2 PODS in k8s cluster 
 ```
