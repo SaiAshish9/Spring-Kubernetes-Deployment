@@ -11,8 +11,17 @@ minikube dashboard
 
 docker build -t spring-k8s:1.0 .
 
-We need to allow k8s to read docker repository:
-eval $(minikube docker-env)
+eval $(minikube docker-env) // We need to allow k8s to read docker repository:
+
+kubectl apply -f deployment.yaml // deployment.apps/spring-boot-k8s created
+
+kubectl get deployments
+NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+spring-boot-k8s   3/3     3            0 
+
+
+
+
 ```
 
 <img width="857" alt="Screenshot 2023-02-02 at 11 15 25 PM" src="https://user-images.githubusercontent.com/43849911/216401660-65856cc2-c916-4a35-97fc-52f3dafce97d.png">
