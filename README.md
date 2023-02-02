@@ -141,6 +141,12 @@ spring-boot-k8s-7d5ccdcf9f-btsrv   0/1     ImagePullBackOff   0          32m
 
 <img width="760" alt="Screenshot 2023-02-03 at 3 39 08 AM" src="https://user-images.githubusercontent.com/43849911/216460550-69268c0c-d1a0-4a37-8cb7-329bd959efb4.png">
 
+<img width="1229" alt="Screenshot 2023-02-03 at 4 26 29 AM" src="https://user-images.githubusercontent.com/43849911/216469937-62ec633a-7395-4f68-963a-c56bdbd536e3.png">
+
+<img width="1224" alt="Screenshot 2023-02-03 at 4 26 47 AM" src="https://user-images.githubusercontent.com/43849911/216469978-44da7730-8a4b-40cf-b680-7299e767fc9d.png">
+
+<img width="1223" alt="Screenshot 2023-02-03 at 4 27 00 AM" src="https://user-images.githubusercontent.com/43849911/216470002-6f6add63-fa6e-4432-8531-b7e53b6e8888.png">
+
 
 
 
