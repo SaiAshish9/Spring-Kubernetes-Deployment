@@ -5,6 +5,8 @@ sudo install minikube-darwin-amd64 /usr/local/bin/minikube
 https://minikube.sigs.k8s.io/docs/start/
 
 ```
+minikube stop
+
 minikube start
 minikube status
 minikube dashboard
