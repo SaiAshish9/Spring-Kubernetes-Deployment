@@ -13,7 +13,8 @@ docker build -t spring-k8s:1.0 .
 
 eval $(minikube docker-env) // We need to allow k8s to read docker repository:
 
-kubectl apply -f deployment.yaml // deployment.apps/spring-boot-k8s created
+kubectl apply -f deployment.yaml 
+// deployment.apps/spring-boot-k8s created
 
 kubectl get deployments
 NAME              READY   UP-TO-DATE   AVAILABLE   AGE
