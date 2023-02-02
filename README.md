@@ -10,6 +10,7 @@ minikube status
 minikube dashboard
 
 kubectl get pods
+kubectl delete pod spring-boot-k8s-7d5ccdcf9f-f9mfw
 
 docker build -t spring-k8s:1.0 .
 
