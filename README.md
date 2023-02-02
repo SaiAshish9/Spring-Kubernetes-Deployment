@@ -51,3 +51,7 @@ spring-boot-k8s   3/3     3            0
 ```
 replicas: 2, Create 2 PODS in k8s cluster 
 ```
+
+```
+NodePort, Load Balancer and ClusterIp are 3 types available in k8s
+```
