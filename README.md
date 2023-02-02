@@ -102,3 +102,5 @@ Deployments Pods & ReplicaSets
 Self Healing Concept in k8s
 ```
 
+<img width="813" alt="Screenshot 2023-02-03 at 3 09 45 AM" src="https://user-images.githubusercontent.com/43849911/216455598-d3e8a6a0-acbe-4db1-a4a3-1017fcad6cc3.png">
+
