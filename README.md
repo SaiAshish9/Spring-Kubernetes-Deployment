@@ -157,6 +157,7 @@ NAME           TYPE     DATA   AGE
 db-user-pass   Opaque   2      5s
 ```
 
+https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/
 
 
 
