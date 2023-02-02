@@ -17,12 +17,15 @@ docker rm $(docker ps -a)
 Remove all images:
 docker rmi $(docker images -a -q)
 
-kubectl get pods
+kubectl get pods 
+// 3 will be shown
 kubectl delete pod spring-boot-k8s-7d5ccdcf9f-f9mfw
+kubectl logs spring-boot-k8s-7d5ccdcf9f-f9mfw
 
 docker build -t spring-k8s:1.0 .
 
-eval $(minikube docker-env) // We need to allow k8s to read docker repository:
+eval $(minikube docker-env) 
+// We need to allow k8s to read docker repository:
 
 kubectl apply -f deployment.yaml 
 // deployment.apps/spring-boot-k8s created
@@ -30,9 +33,6 @@ kubectl apply -f deployment.yaml
 kubectl get deployments
 NAME              READY   UP-TO-DATE   AVAILABLE   AGE
 spring-boot-k8s   3/3     3            0 
-
-
-
 
 ```
 
