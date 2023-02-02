@@ -9,33 +9,55 @@ minikube stop
 minikube start
 minikube status
 minikube dashboard
+
 kubectl describe pods <pod>
+
 Remove all containers:
 docker rm $(docker ps -a)
+
 Remove all images:
 docker rmi $(docker images -a -q)
+
 kubectl get pods 
 // 3 will be shown
+
 kubectl delete pod spring-boot-k8s-7d5ccdcf9f-f9mfw
+
 docker build -t spring-k8s:1.0 .
+
+docker run spring-k8s:1.0
+
+docker exec -it spring-k8s:1.0
+
 eval $(minikube docker-env) 
 // We need to allow k8s to read docker repository:
+
 kubectl apply -f deployment.yaml 
 // deployment.apps/spring-boot-k8s created
+
 kubectl get deployments
 NAME              READY   UP-TO-DATE   AVAILABLE   AGE
 spring-boot-k8s   3/3     3            0 
+
 kubectl delete deploy spring-boot-k8s
+
 kubectl logs spring-boot-k8s-7d5ccdcf9f-f9mfw
+
 kubectl apply -f service.yaml 
+
 kubectl get service
+
 kubectl get svc
+
 kubectl get nodes -o wide 
+
 minikube ip 
 # node ip
+
 we need node port and ip to access the api
 http://{{nodeIP}}:{PORT}/{API URL}/endpoint
 http://192.168.64.14:32208/message
+
 minikube dashboard
 ```
 
@@ -81,3 +103,35 @@ Self Healing Concept in k8s
 ```
 
 <img width="813" alt="Screenshot 2023-02-03 at 3 09 45 AM" src="https://user-images.githubusercontent.com/43849911/216455598-d3e8a6a0-acbe-4db1-a4a3-1017fcad6cc3.png">
+
+
+<img width="949" alt="Screenshot 2023-02-03 at 3 20 42 AM" src="https://user-images.githubusercontent.com/43849911/216457490-d89abe84-a6fd-4685-9e86-0b99fea7e39e.png">
+
+```
+eval $(minikube docker-env) 
+
+docker build -t springboot-k8s-example:1.0 .
+```
+
+<img width="996" alt="Screenshot 2023-02-03 at 3 24 06 AM" src="https://user-images.githubusercontent.com/43849911/216458052-01ba5796-c439-4721-8261-bbec053ee569.png">
+
+```
+kubectl apply -f deployment.yaml 
+deployment.apps/spring-boot-k8s configured
+
+kubectl get deployments
+NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+spring-boot-k8s   0/2     1            0           32m
+
+kubectl get pods
+NAME                               READY   STATUS             RESTARTS   AGE
+spring-boot-k8s-658c8fff8d-v9h64   0/1     ImagePullBackOff   0          35s
+spring-boot-k8s-7d5ccdcf9f-8mwq6   0/1     ImagePullBackOff   0          32m
+spring-boot-k8s-7d5ccdcf9f-btsrv   0/1     ImagePullBackOff   0          32m
+
+
+```
+
+
+
+
