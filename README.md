@@ -9,6 +9,8 @@ minikube start
 minikube status
 minikube dashboard
 
+docker build -t spring-k8s:1.0 .
+
 We need to allow k8s to read docker repository:
 eval $(minikube docker-env)
 ```
@@ -18,3 +20,5 @@ eval $(minikube docker-env)
 <img width="898" alt="Screenshot 2023-02-02 at 11 21 56 PM" src="https://user-images.githubusercontent.com/43849911/216403092-49d0220b-cd8a-4f2b-9c20-ef07c310e384.png">
 
 <img width="951" alt="Screenshot 2023-02-02 at 11 22 19 PM" src="https://user-images.githubusercontent.com/43849911/216403160-05040e07-7f41-4afb-9bbc-efc892307b06.png">
+
+<img width="961" alt="Screenshot 2023-02-02 at 11 42 14 PM" src="https://user-images.githubusercontent.com/43849911/216409573-2308d7ec-51eb-4c49-933c-da7db34a9123.png">
