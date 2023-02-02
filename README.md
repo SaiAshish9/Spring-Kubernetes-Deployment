@@ -147,6 +147,15 @@ spring-boot-k8s-7d5ccdcf9f-btsrv   0/1     ImagePullBackOff   0          32m
 
 <img width="1223" alt="Screenshot 2023-02-03 at 4 27 00 AM" src="https://user-images.githubusercontent.com/43849911/216470002-6f6add63-fa6e-4432-8531-b7e53b6e8888.png">
 
+```
+kubectl create secret generic db-user-pass \
+    --from-literal=username=admin \
+    --from-literal=password='S!B\*d$zDsb='
+secret/db-user-pass created
+kubectl get secrets                         
+NAME           TYPE     DATA   AGE
+db-user-pass   Opaque   2      5s
+```
 
 
 
